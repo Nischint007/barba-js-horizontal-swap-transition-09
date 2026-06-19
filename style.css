@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+[data-barba="container"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: center center;
+    will-change: transform;
+
+}
+
+[data-barba="wrapper"] {
+    position: relative;
+    overflow: hidden;
+}
+
+[data-barba-namespace="home"] {
+    background-image: url("https://i.pinimg.com/736x/7e/9f/63/7e9f637bbb87526e28585ced92b8d6cb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+[data-barba-namespace="about"] {
+    background-image: url("https://i.pinimg.com/1200x/3c/1e/51/3c1e5188c5fb129c3bfb41bd1227f8d4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+[data-barba-namespace="contact"] {
+    background-image: url("https://i.pinimg.com/1200x/4d/0a/aa/4d0aaaf31b406333569c7e9e7f1d3b00.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+#nav-left {
+    cursor: pointer;
+    font-size: 1.5vw;
+    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #fff;
+}
+
+#nav-right {
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+}
